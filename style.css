@@ -275,9 +275,13 @@ ul { list-style: none; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-color: #1a2218;
-  background-size: cover;
-  background-position: center top;
+  /* image on top; cinematic forest-green gradient as fallback when image is absent */
+  background-image:
+    url('images/hero-deer.webp'),
+    radial-gradient(ellipse at 62% 30%, #253a1d 0%, #13200f 38%, #090c08 100%);
+  background-size: cover, cover;
+  background-position: center top, center;
+  background-repeat: no-repeat, no-repeat;
   transform: scale(1.04);
   transition: transform 8s ease-out;
 }
@@ -435,9 +439,13 @@ body.loaded .hero-bg { transform: scale(1); }
 .lodge-bg {
   position: absolute;
   inset: 0;
-  background-color: #1e1a14;
-  background-size: cover;
-  background-position: center;
+  /* lodge.png exists — warm firelight gradient as fallback */
+  background-image:
+    url('images/lodge.png'),
+    radial-gradient(ellipse at 55% 60%, #2b1c0d 0%, #1a1009 40%, #0b0806 100%);
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .lodge-overlay {
@@ -498,7 +506,7 @@ body.loaded .hero-bg { transform: scale(1); }
 .log-card-img {
   position: relative;
   height: 200px;
-  background-color: #1a2015;
+  background: linear-gradient(160deg, #1e2d17 0%, #111b0d 55%, #090c07 100%);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -588,9 +596,13 @@ body.loaded .hero-bg { transform: scale(1); }
 .gear-bg {
   position: absolute;
   inset: 0;
-  background-color: #141210;
-  background-size: cover;
-  background-position: center;
+  /* dark earth-tone gradient as fallback; replace url when gear image is ready */
+  background-image:
+    url('images/gear.webp'),
+    radial-gradient(ellipse at 40% 55%, #1e160c 0%, #130e08 40%, #080706 100%);
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .gear-overlay {
@@ -644,7 +656,7 @@ body.loaded .hero-bg { transform: scale(1); }
 .insta-img {
   width: 100%;
   height: 100%;
-  background-color: #1a2015;
+  background: linear-gradient(135deg, #1c2915 0%, #101809 55%, #080b06 100%);
   background-size: cover;
   background-position: center;
   transition: transform .5s ease, filter .5s ease;
