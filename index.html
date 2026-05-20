@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEERIFY – PHOTO HUNTER</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M20 36 C20 36 8 28 8 18 C8 12 13 8 18 9 C16 6 15 3 17 1 C18 4 19 6 20 8 C21 6 22 4 23 1 C25 3 24 6 22 9 C27 8 32 12 32 18 C32 28 20 36 20 36Z" stroke="#b08a45" stroke-width="1.2" fill="none"/>
+          <line x1="20" y1="36" x2="20" y2="44" stroke="#b08a45" stroke-width="1"/>
+          <line x1="20" y1="42" x2="16" y2="44" stroke="#b08a45" stroke-width="1"/>
+          <line x1="20" y1="42" x2="24" y2="44" stroke="#b08a45" stroke-width="1"/>
+          <circle cx="16" cy="19" r="1.5" fill="#b08a45"/>
+          <circle cx="24" cy="19" r="1.5" fill="#b08a45"/>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-name">DEERIFY</span>
+          <span class="logo-sub">PHOTO HUNTER</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#home" class="nav-link">HOME</a></li>
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li><a href="#lodge" class="nav-link">LODGE</a></li>
+          <li><a href="#tracking" class="nav-link">TRACKING</a></li>
+          <li><a href="#gear" class="nav-link">GEAR</a></li>
+          <li><a href="#gallery" class="nav-link">GALLERY</a></li>
+          <li><a href="#journal" class="nav-link">JOURNAL</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://www.instagram.com/aicmode" target="_blank" rel="noopener" class="insta-btn" aria-label="Instagram">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+        </svg>
+        <span>DEERIFY</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="メニュー" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+    <div class="nav-overlay" id="nav-overlay"></div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg" style="background-image: url('images/hero-deer.webp')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-scroll-indicator">
+      <span>S</span><span>C</span><span>R</span><span>O</span><span>L</span><span>L</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">PHOTO HUNTER</p>
+      <h1 class="hero-title">Hunt the<br>Moment.</h1>
+      <p class="hero-desc">撃たないハンターとして、<br>出会いの瞬間を写真に収める。</p>
+      <a href="#tracking" class="btn btn-outline">
+        EXPLORE THE WILD <span class="btn-arrow">→</span>
+      </a>
+    </div>
+    <div class="hero-coords">
+      <span>31.9357° N 130.8344° E</span>
+      <span class="coords-place">KIRISHIMA, JAPAN</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section-pad" id="about">
+    <div class="container about-grid">
+      <div class="about-deco-line"></div>
+      <div class="about-text">
+        <p class="eyebrow">ABOUT</p>
+        <h2 class="section-title">The Pursuit<br>of Stillness.</h2>
+        <p class="body-text">カメラを手に、森の深部へ。シャッターを切る一瞬のために、何時間でも待つ。それがDeerifyのフォトハントです。</p>
+        <p class="body-text">鹿と人が交差するその瞬間、静寂の中に息づく命の輝きを、一枚の写真として残す旅を続けています。</p>
+      </div>
+      <div class="about-stat-col">
+        <div class="about-stat">
+          <span class="stat-num">340<sup>+</sup></span>
+          <span class="stat-label">Encounters</span>
+        </div>
+        <div class="about-stat">
+          <span class="stat-num">12</span>
+          <span class="stat-label">Locations</span>
+        </div>
+        <div class="about-stat">
+          <span class="stat-num">6</span>
+          <span class="stat-label">Years</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LODGE ========== -->
+  <section class="lodge" id="lodge">
+    <div class="lodge-image-wrap">
+      <div class="lodge-bg" style="background-image: url('images/lodge.webp')"></div>
+      <div class="lodge-overlay"></div>
+    </div>
+    <div class="lodge-content">
+      <p class="eyebrow">THE LODGE</p>
+      <h2 class="section-title">A place to rest,<br>and prepare.</h2>
+      <p class="body-text">森の静寂に包まれた山小屋。<br>ここは次の出会いに備えるための拠点。</p>
+      <p class="body-text">自然と共にある時間が、感性を研ぎ澄ます。</p>
+      <a href="#contact" class="btn btn-outline">
+        VIEW LODGE <span class="btn-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== TRACKING LOG ========== -->
+  <section class="tracking section-pad" id="tracking">
+    <div class="container tracking-inner">
+      <div class="tracking-info">
+        <p class="eyebrow">TRACKING LOG</p>
+        <h2 class="section-title">Encounters<br>in the Wild.</h2>
+        <p class="body-text">霧島の森で出会った野生の鹿たち。<br>気配、風、足跡、そして一瞬の視線。<br>すべてが記憶に残るハントの記録。</p>
+        <a href="#gallery" class="btn btn-outline">
+          VIEW ALL LOGS <span class="btn-arrow">→</span>
+        </a>
+      </div>
+      <div class="tracking-cards-wrap">
+        <button class="slider-btn slider-prev" id="slider-prev" aria-label="前へ">&#8592;</button>
+        <div class="tracking-cards" id="tracking-cards">
+
+          <article class="log-card">
+            <div class="log-card-img" style="background-image: url('images/log-1.webp')">
+              <div class="log-card-overlay"></div>
+            </div>
+            <div class="log-card-body">
+              <h3 class="log-card-title">Morning Fog</h3>
+              <div class="log-meta">
+                <span class="log-date">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  2024.11.12
+                </span>
+                <span class="log-time">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  07:15
+                </span>
+              </div>
+              <div class="log-stars">
+                <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star">★</span>
+              </div>
+              <p class="log-place">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                KIRISHIMA
+              </p>
+            </div>
+          </article>
+
+          <article class="log-card">
+            <div class="log-card-img" style="background-image: url('images/log-2.webp')">
+              <div class="log-card-overlay"></div>
+            </div>
+            <div class="log-card-body">
+              <h3 class="log-card-title">Side Glance</h3>
+              <div class="log-meta">
+                <span class="log-date">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  2024.11.09
+                </span>
+                <span class="log-time">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  06:45
+                </span>
+              </div>
+              <div class="log-stars">
+                <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span>
+              </div>
+              <p class="log-place">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                EBINO KOGEN
+              </p>
+            </div>
+          </article>
+
+          <article class="log-card">
+            <div class="log-card-img" style="background-image: url('images/log-3.webp')">
+              <div class="log-card-overlay"></div>
+            </div>
+            <div class="log-card-body">
+              <h3 class="log-card-title">Into the Light</h3>
+              <div class="log-meta">
+                <span class="log-date">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  2024.10.29
+                </span>
+                <span class="log-time">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  16:30
+                </span>
+              </div>
+              <div class="log-stars">
+                <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star">★</span>
+              </div>
+              <p class="log-place">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                KIRISHIMA
+              </p>
+            </div>
+          </article>
+
+          <article class="log-card">
+            <div class="log-card-img" style="background-image: url('images/log-1.webp')">
+              <div class="log-card-overlay"></div>
+            </div>
+            <div class="log-card-body">
+              <h3 class="log-card-title">Silent Path</h3>
+              <div class="log-meta">
+                <span class="log-date">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  2024.10.15
+                </span>
+                <span class="log-time">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  05:50
+                </span>
+              </div>
+              <div class="log-stars">
+                <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star">★</span><span class="star">★</span>
+              </div>
+              <p class="log-place">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                EBINO KOGEN
+              </p>
+            </div>
+          </article>
+
+        </div>
+        <button class="slider-btn slider-next" id="slider-next" aria-label="次へ">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GEAR ========== -->
+  <section class="gear" id="gear">
+    <div class="gear-image-wrap">
+      <div class="gear-bg" style="background-image: url('images/gear.webp')"></div>
+      <div class="gear-overlay"></div>
+    </div>
+    <div class="gear-content">
+      <p class="eyebrow">GEAR</p>
+      <h2 class="section-title">Choose your<br>companions.</h2>
+      <p class="body-text">信頼できる道具が、最高の瞬間を支える。<br>自然の中で真価を発揮するギアを厳選。</p>
+      <a href="#contact" class="btn btn-outline">
+        VIEW GEAR <span class="btn-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== INSTAGRAM ========== -->
+  <section class="instagram section-pad" id="gallery">
+    <div class="container">
+      <div class="instagram-header">
+        <div>
+          <p class="eyebrow">FOLLOW MY JOURNEY</p>
+          <h2 class="section-title-sm">Deerify on Instagram</h2>
+          <p class="body-text">日々の記録と出会いの瞬間をInstagramで発信中。</p>
+          <a href="https://www.instagram.com/aicmode" target="_blank" rel="noopener" class="btn btn-outline insta-link-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+            </svg>
+            DEERIFY <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+      <div class="insta-grid" id="gallery">
+        <a href="https://www.instagram.com/aicmode" target="_blank" rel="noopener" class="insta-thumb">
+          <div class="insta-img" style="background-image: url('images/insta-1.webp')"></div>
+        </a>
+        <a href="https://www.instagram.com/aicmode" target="_blank" rel="noopener" class="insta-thumb">
+          <div class="insta-img" style="background-image: url('images/insta-2.webp')"></div>
+        </a>
+        <a href="https://www.instagram.com/aicmode" target="_blank" rel="noopener" class="insta-thumb">
+          <div class="insta-img" style="background-image: url('images/insta-3.webp')"></div>
+        </a>
+        <a href="https://www.instagram.com/aicmode" target="_blank" rel="noopener" class="insta-thumb">
+          <div class="insta-img" style="background-image: url('images/insta-4.webp')"></div>
+        </a>
+        <a href="https://www.instagram.com/aicmode" target="_blank" rel="noopener" class="insta-thumb">
+          <div class="insta-img" style="background-image: url('images/insta-5.webp')"></div>
+        </a>
+        <a href="https://www.instagram.com/aicmode" target="_blank" rel="noopener" class="insta-thumb">
+          <div class="insta-img" style="background-image: url('images/insta-6.webp')"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="container footer-grid">
+
+        <div class="footer-brand">
+          <a href="#" class="logo logo-footer">
+            <svg class="logo-icon" viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M20 36 C20 36 8 28 8 18 C8 12 13 8 18 9 C16 6 15 3 17 1 C18 4 19 6 20 8 C21 6 22 4 23 1 C25 3 24 6 22 9 C27 8 32 12 32 18 C32 28 20 36 20 36Z" stroke="#b08a45" stroke-width="1.2" fill="none"/>
+              <line x1="20" y1="36" x2="20" y2="44" stroke="#b08a45" stroke-width="1"/>
+              <line x1="20" y1="42" x2="16" y2="44" stroke="#b08a45" stroke-width="1"/>
+              <line x1="20" y1="42" x2="24" y2="44" stroke="#b08a45" stroke-width="1"/>
+              <circle cx="16" cy="19" r="1.5" fill="#b08a45"/>
+              <circle cx="24" cy="19" r="1.5" fill="#b08a45"/>
+            </svg>
+            <span class="logo-text">
+              <span class="logo-name">DEERIFY</span>
+              <span class="logo-sub">PHOTO HUNTER</span>
+            </span>
+          </a>
+          <p class="footer-tagline">撃たないハンターとして、<br>自然との出会いを写真に残す。</p>
+        </div>
+
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#lodge">LODGE</a></li>
+            <li><a href="#tracking">TRACKING LOG</a></li>
+            <li><a href="#gear">GEAR</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#journal">JOURNAL</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-info">
+          <p class="footer-info-label">LOCATION</p>
+          <p>Kirishima, Ebino Kogen<br>Kagoshima, Japan</p>
+        </div>
+
+        <div class="footer-info">
+          <p class="footer-info-label">CONTACT</p>
+          <p><a href="mailto:info@deerify.com">info@deerify.com</a></p>
+          <div class="footer-sns">
+            <a href="https://www.instagram.com/aicmode" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.97C18.88 4 12 4 12 4s-6.88 0-8.59.45A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.45a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="mailto:info@deerify.com" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-badge-wrap">
+          <div class="footer-badge">
+            <div class="badge-inner">
+              <svg viewBox="0 0 100 100" class="badge-circle-text">
+                <path id="circle" d="M 50,50 m -35,0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0"/>
+                <text font-size="10.5" fill="#b08a45" font-family="Jost, sans-serif" letter-spacing="3">
+                  <textPath href="#circle">HUNT THE MOMENT · EST. 2024 ·</textPath>
+                </text>
+              </svg>
+              <div class="badge-center">
+                <svg viewBox="0 0 40 44" fill="none" width="28" height="28">
+                  <path d="M20 36 C20 36 8 28 8 18 C8 12 13 8 18 9 C16 6 15 3 17 1 C18 4 19 6 20 8 C21 6 22 4 23 1 C25 3 24 6 22 9 C27 8 32 12 32 18 C32 28 20 36 20 36Z" stroke="#b08a45" stroke-width="1.5" fill="none"/>
+                </svg>
+                <p class="badge-year">EST. 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 DEERIFY. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
