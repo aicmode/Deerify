@@ -32,7 +32,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img { display: block; max-width: 100%; }
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  image-rendering: auto;
+  filter: none;
+}
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 
@@ -280,13 +286,13 @@ ul { list-style: none; }
     url('images/hero-deer-morning.webp'),
     radial-gradient(ellipse at 62% 30%, #253a1d 0%, #13200f 38%, #090c08 100%);
   background-size: cover, cover;
-  background-position: center top, center;
+  background-position: center, center;
   background-repeat: no-repeat, no-repeat;
-  transform: scale(1.04);
-  transition: transform 8s ease-out;
+  image-rendering: auto;
+  filter: none;
 }
 
-body.loaded .hero-bg { transform: scale(1); }
+body.loaded .hero-bg { transform: none; }
 
 .hero-overlay {
   position: absolute;
@@ -443,8 +449,10 @@ body.loaded .hero-bg { transform: scale(1); }
     url('images/lodge-fireplace.webp'),
     radial-gradient(ellipse at 55% 60%, #2b1c0d 0%, #1a1009 40%, #0b0806 100%);
   background-size: cover, cover;
-  background-position: center 58%, center;
+  background-position: center, center;
   background-repeat: no-repeat, no-repeat;
+  image-rendering: auto;
+  filter: none;
 }
 
 .lodge-overlay {
@@ -508,6 +516,9 @@ body.loaded .hero-bg { transform: scale(1); }
   background: linear-gradient(160deg, #1e2d17 0%, #111b0d 55%, #090c07 100%);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  image-rendering: auto;
+  filter: none;
   overflow: hidden;
 }
 .log-card-overlay {
@@ -601,6 +612,8 @@ body.loaded .hero-bg { transform: scale(1); }
   background-size: cover, cover;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
+  image-rendering: auto;
+  filter: none;
 }
 
 .gear-overlay {
@@ -661,8 +674,11 @@ body.loaded .hero-bg { transform: scale(1); }
   height: 100%;
   background-size: cover;
   background-position: center;
-  filter: brightness(.8) saturate(.88);
-  transition: transform .65s ease, filter .65s ease;
+  background-repeat: no-repeat;
+  image-rendering: auto;
+  filter: none;
+  object-fit: cover;
+  transition: transform .65s ease;
 }
 
 .gallery-item::after,
@@ -677,8 +693,8 @@ body.loaded .hero-bg { transform: scale(1); }
 }
 
 .gallery-item:hover .gallery-img {
-  transform: scale(1.045);
-  filter: brightness(.95) saturate(1);
+  transform: scale(1.015);
+  filter: none;
 }
 
 /* =====================================================
@@ -691,6 +707,8 @@ body.loaded .hero-bg { transform: scale(1); }
   background-size: cover, cover;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
+  image-rendering: auto;
+  filter: none;
   border-top: 1px solid rgba(176,138,69,.08);
 }
 
@@ -725,13 +743,16 @@ body.loaded .hero-bg { transform: scale(1); }
   background: linear-gradient(135deg, #1c2915 0%, #101809 55%, #080b06 100%);
   background-size: cover;
   background-position: center;
-  transition: transform .5s ease, filter .5s ease;
-  filter: brightness(.85) saturate(.8);
+  background-repeat: no-repeat;
+  image-rendering: auto;
+  filter: none;
+  object-fit: cover;
+  transition: transform .5s ease;
 }
 
 .insta-thumb:hover .insta-img {
-  transform: scale(1.06);
-  filter: brightness(1) saturate(1);
+  transform: scale(1.015);
+  filter: none;
 }
 
 /* =====================================================
