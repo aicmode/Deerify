@@ -443,7 +443,7 @@ body.loaded .hero-bg { transform: scale(1); }
     url('images/lodge-fireplace.webp'),
     radial-gradient(ellipse at 55% 60%, #2b1c0d 0%, #1a1009 40%, #0b0806 100%);
   background-size: cover, cover;
-  background-position: center, center;
+  background-position: center 58%, center;
   background-repeat: no-repeat, no-repeat;
 }
 
@@ -684,7 +684,15 @@ body.loaded .hero-bg { transform: scale(1); }
 /* =====================================================
    INSTAGRAM
    ===================================================== */
-.instagram { background: var(--bg-dark); border-top: 1px solid rgba(176,138,69,.08); }
+.instagram {
+  background-image:
+    linear-gradient(rgba(17,19,15,.9), rgba(17,19,15,.96)),
+    url('images/hero-deer-sunset.webp');
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  border-top: 1px solid rgba(176,138,69,.08);
+}
 
 .instagram-header {
   display: flex;
@@ -926,7 +934,7 @@ body.loaded .hero-bg { transform: scale(1); }
 
   /* Hero */
   .hero-content { padding: 0 24px 80px; }
-  .hero-coords { right: 24px; bottom: 30px; }
+  .hero-coords { display: none; }
   .hero-scroll-indicator { display: none; }
 
   /* About */
