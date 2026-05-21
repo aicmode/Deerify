@@ -275,7 +275,7 @@ section,
   position: fixed;
   inset: 0;
   background: rgba(8,9,7,.6);
-  z-index: 5;
+  z-index: 800;
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition);
@@ -1018,7 +1018,7 @@ body.loaded .hero-bg { transform: none; }
     color: var(--text-mid);
   }
 
-  .nav-overlay { display: block; }
+  .nav-overlay { display: block; pointer-events: none; }
 
   /* Hero */
   .hero-content { padding: 0 24px 80px; }
