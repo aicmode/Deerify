@@ -1053,26 +1053,41 @@ body.loaded .hero-bg { transform: none; }
   }
 
   /* Tracking */
-  .tracking-inner { grid-template-columns: minmax(0, 1fr); }
-  .tracking-cards-wrap { width: 100%; }
+  .tracking { overflow-x: hidden; }
+  .tracking-inner {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .tracking-cards-wrap {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
   .tracking-cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 18px;
     width: 100%;
-    overflow: visible;
+    max-width: 100%;
+    overflow: hidden;
     padding-bottom: 0;
     scroll-snap-type: none;
   }
   .log-card {
     width: 100%;
-    max-width: none;
+    max-width: 100%;
     min-width: 0;
     flex: none;
     scroll-snap-align: none;
   }
+  .log-card-img {
+    width: 100%;
+    max-width: 100%;
+  }
   .slider-btn { display: none; }
-  .tracking-cards-wrap { gap: 0; }
 
   /* Gear */
   .gear { min-height: 520px; width: 100%; }
