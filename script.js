@@ -145,6 +145,7 @@
     '.btn',
     '.log-card',
     '.about-stat',
+    '.gallery-item',
     '.insta-thumb',
   ];
 

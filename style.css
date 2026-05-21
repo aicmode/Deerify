@@ -277,7 +277,7 @@ ul { list-style: none; }
   inset: 0;
   /* image on top; cinematic forest-green gradient as fallback when image is absent */
   background-image:
-    url('images/hero-deer.webp'),
+    url('images/hero-deer-morning.webp'),
     radial-gradient(ellipse at 62% 30%, #253a1d 0%, #13200f 38%, #090c08 100%);
   background-size: cover, cover;
   background-position: center top, center;
@@ -439,9 +439,8 @@ body.loaded .hero-bg { transform: scale(1); }
 .lodge-bg {
   position: absolute;
   inset: 0;
-  /* lodge.png exists — warm firelight gradient as fallback */
   background-image:
-    url('images/lodge.png'),
+    url('images/lodge-fireplace.webp'),
     radial-gradient(ellipse at 55% 60%, #2b1c0d 0%, #1a1009 40%, #0b0806 100%);
   background-size: cover, cover;
   background-position: center, center;
@@ -453,8 +452,8 @@ body.loaded .hero-bg { transform: scale(1); }
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(8,9,7,.0) 0%,
-    rgba(8,9,7,.0) 45%,
+    rgba(8,9,7,.18) 0%,
+    rgba(8,9,7,.28) 42%,
     rgba(8,9,7,.92) 70%,
     rgba(8,9,7,.97) 100%
   );
@@ -596,9 +595,8 @@ body.loaded .hero-bg { transform: scale(1); }
 .gear-bg {
   position: absolute;
   inset: 0;
-  /* dark earth-tone gradient as fallback; replace url when gear image is ready */
   background-image:
-    url('images/gear.webp'),
+    url('images/gear-camera.webp'),
     radial-gradient(ellipse at 40% 55%, #1e160c 0%, #130e08 40%, #080706 100%);
   background-size: cover, cover;
   background-position: center, center;
@@ -610,8 +608,8 @@ body.loaded .hero-bg { transform: scale(1); }
   inset: 0;
   background: linear-gradient(
     to left,
-    rgba(8,9,7,.0) 0%,
-    rgba(8,9,7,.0) 40%,
+    rgba(8,9,7,.2) 0%,
+    rgba(8,9,7,.28) 40%,
     rgba(8,9,7,.9) 65%,
     rgba(8,9,7,.97) 100%
   );
@@ -622,6 +620,65 @@ body.loaded .hero-bg { transform: scale(1); }
   z-index: 2;
   width: 44%;
   padding: 100px 80px;
+}
+
+/* =====================================================
+   GALLERY
+   ===================================================== */
+.gallery {
+  background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-dark) 100%);
+  border-top: 1px solid rgba(176,138,69,.08);
+}
+
+.gallery-header {
+  max-width: 520px;
+  margin-bottom: 48px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(180px, 15vw);
+  gap: 8px;
+}
+
+.gallery-item {
+  position: relative;
+  display: block;
+  min-height: 180px;
+  overflow: hidden;
+  border: 1px solid rgba(176,138,69,.12);
+  background: linear-gradient(135deg, #1c2915 0%, #101809 55%, #080b06 100%);
+}
+
+.gallery-item-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(.8) saturate(.88);
+  transition: transform .65s ease, filter .65s ease;
+}
+
+.gallery-item::after,
+.insta-thumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(8,9,7,.1) 0%, rgba(8,9,7,.68) 100%),
+    radial-gradient(ellipse at center, transparent 20%, rgba(8,9,7,.32) 100%);
+  pointer-events: none;
+}
+
+.gallery-item:hover .gallery-img {
+  transform: scale(1.045);
+  filter: brightness(.95) saturate(1);
 }
 
 /* =====================================================
@@ -651,6 +708,7 @@ body.loaded .hero-bg { transform: scale(1); }
   aspect-ratio: 1;
   overflow: hidden;
   position: relative;
+  background: linear-gradient(135deg, #1c2915 0%, #101809 55%, #080b06 100%);
 }
 
 .insta-img {
@@ -806,6 +864,12 @@ body.loaded .hero-bg { transform: scale(1); }
 
   .tracking-inner { grid-template-columns: 280px 1fr; gap: 40px; }
 
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(170px, 20vw);
+  }
+  .gallery-item-large { grid-column: span 2; }
+
   .footer-grid { grid-template-columns: 1fr 1fr 1fr; gap: 40px; }
   .footer-badge-wrap { grid-column: 3; justify-content: center; }
 
@@ -910,6 +974,24 @@ body.loaded .hero-bg { transform: scale(1); }
     padding: 200px 24px 60px;
   }
 
+  /* Gallery */
+  .gallery-header { margin-bottom: 32px; }
+  .gallery-grid {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    scroll-snap-type: x mandatory;
+  }
+  .gallery-item,
+  .gallery-item-large {
+    flex: 0 0 min(74vw, 340px);
+    min-height: 300px;
+    grid-column: auto;
+    grid-row: auto;
+    scroll-snap-align: start;
+  }
+
   /* Insta */
   .instagram-header { flex-direction: column; }
   .insta-grid { grid-template-columns: repeat(3, 1fr); gap: 4px; }
@@ -927,4 +1009,9 @@ body.loaded .hero-bg { transform: scale(1); }
   .lodge-content { padding: 240px 20px 60px; }
   .gear-content { padding: 220px 20px 60px; }
   .hero-title { font-size: 3rem; }
+  .gallery-item,
+  .gallery-item-large {
+    flex-basis: 82vw;
+    min-height: 260px;
+  }
 }
