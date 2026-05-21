@@ -174,7 +174,6 @@ ul { list-style: none; }
 .site-header.scrolled {
   background: rgba(8,9,7,.92);
   border-bottom: 1px solid rgba(176,138,69,.15);
-  backdrop-filter: blur(12px);
 }
 
 .header-inner {
@@ -475,6 +474,34 @@ body.loaded .hero-bg { transform: none; }
   padding: 100px 80px 100px 60px;
 }
 
+.lodge-visuals {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 26px 0 30px;
+}
+
+.lodge-visual,
+.gear-visual {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(176,138,69,.18);
+  background: rgba(8,9,7,.35);
+}
+
+.lodge-visual {
+  aspect-ratio: 4 / 3;
+}
+
+.lodge-visual img,
+.gear-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: auto;
+  filter: none;
+}
+
 /* =====================================================
    TRACKING LOG
    ===================================================== */
@@ -633,6 +660,17 @@ body.loaded .hero-bg { transform: none; }
   z-index: 2;
   width: 44%;
   padding: 100px 80px;
+}
+
+.gear-visuals {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: 26px 0 30px;
+}
+
+.gear-visual {
+  aspect-ratio: 1;
 }
 
 /* =====================================================
@@ -890,6 +928,7 @@ body.loaded .hero-bg { transform: none; }
 
   .lodge-content { width: 52%; padding: 80px 48px; }
   .gear-content { width: 52%; padding: 80px 48px; }
+  .gear-visuals { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
   .tracking-inner { grid-template-columns: 280px 1fr; gap: 40px; }
 
@@ -926,7 +965,6 @@ body.loaded .hero-bg { transform: none; }
     height: 100vh;
     background: rgba(11,13,10,.97);
     border-left: 1px solid rgba(176,138,69,.15);
-    backdrop-filter: blur(16px);
     z-index: 9;
     flex-direction: column;
     justify-content: center;
@@ -979,6 +1017,9 @@ body.loaded .hero-bg { transform: none; }
     padding: 220px 24px 60px;
     margin-left: 0;
   }
+  .lodge-visuals {
+    max-width: 420px;
+  }
 
   /* Tracking */
   .tracking-inner { grid-template-columns: 1fr; }
@@ -1001,6 +1042,10 @@ body.loaded .hero-bg { transform: none; }
   .gear-content {
     width: 100%;
     padding: 200px 24px 60px;
+  }
+  .gear-visuals {
+    max-width: 420px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   /* Gallery */
@@ -1037,6 +1082,7 @@ body.loaded .hero-bg { transform: none; }
   .footer-grid { grid-template-columns: 1fr; }
   .lodge-content { padding: 240px 20px 60px; }
   .gear-content { padding: 220px 20px 60px; }
+  .gear-visuals { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero-title { font-size: 3rem; }
   .gallery-item,
   .gallery-item-large {
