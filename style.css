@@ -277,9 +277,13 @@ section,
   background: rgba(8,9,7,.6);
   z-index: 5;
   opacity: 0;
+  pointer-events: none;
   transition: opacity var(--transition);
 }
-.nav-overlay.visible { opacity: 1; }
+.nav-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 /* =====================================================
    HERO
