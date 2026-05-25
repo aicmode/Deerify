@@ -1023,9 +1023,7 @@ body.loaded .hero-bg { transform: none; }
   /* Hero */
   .hero-content { padding: 0 24px 80px; }
   .hero-bg {
-    background-image:
-      url('images/hero-deer-morning.webp'),
-      radial-gradient(ellipse at 62% 30%, #253a1d 0%, #13200f 38%, #090c08 100%);
+    background-position: 50% center, center;
   }
   .hero-coords { display: none; }
   .hero-scroll-indicator { display: none; }
